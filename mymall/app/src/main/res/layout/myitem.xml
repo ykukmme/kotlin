@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/image"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toRightOf="@id/image"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/comment"
+        android:layout_toRightOf="@id/price"
+        android:numStars="5" />
+
+    <Button
+        android:layout_toRightOf="@id/comment"
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구매" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_below="@id/image"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하얀색" />
+
+        <RadioButton
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검정색" />
+
+        <RadioButton
+            android:id="@+id/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회색" />
+
+    </RadioGroup>
+
+
+
+
+</RelativeLayout>

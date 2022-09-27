@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="냉장고 쇼핑몰" />
+
+    <Button
+        android:id="@+id/ssref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삼성 5door 890리터 냉장고 280만원" />
+
+    <Button
+        android:id="@+id/lgref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LG 5door 870리터 냉장고 320만원" />
+
+    <Button
+        android:id="@+id/wiref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위니아 4door 860리터 냉장고 220만원" />
+
+    <Button
+        android:id="@+id/finish2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기" />
+</LinearLayout>

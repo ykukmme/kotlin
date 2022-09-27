@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="세탁기 쇼핑몰" />
+
+    <Button
+        android:id="@+id/sswash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삼성세탁기 24kg 180만원" />
+
+    <Button
+        android:id="@+id/lgwash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LG세탁기 230만원" />
+
+    <Button
+        android:id="@+id/wiwash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위니아 세탁기 170만원" />
+
+    <Button
+        android:id="@+id/finish3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기" />
+</LinearLayout>

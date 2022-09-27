@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/play_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="재생" />
+
+    <Button
+        android:id="@+id/stop_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="정지" />
+
+    <Button
+        android:id="@+id/play_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동영상 재생" />
+
+    <Button
+        android:id="@+id/stop_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동영상 정지" />
+
+    <Button
+        android:id="@+id/call_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="화면 전환" />
+
+    <Button
+        android:id="@+id/play_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="백그라운드 재생" />
+
+    <Button
+        android:id="@+id/stop_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="백그라운드 정지" />
+
+    <Button
+        android:id="@+id/love_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button1" />
+
+    <Button
+        android:id="@+id/love_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button2" />
+
+    <VideoView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

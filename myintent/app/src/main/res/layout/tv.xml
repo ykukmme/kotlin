@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="TV 쇼핑몰" />
+
+    <Button
+        android:id="@+id/sstv55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삼성TV 55인치 120만원" />
+
+    <Button
+        android:id="@+id/lgtv75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LG TV 75인치 250만원" />
+
+    <Button
+        android:id="@+id/sstv65"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삼성 TV 65인치 180만원" />
+
+    <Button
+        android:id="@+id/finish1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기" />
+</LinearLayout>
