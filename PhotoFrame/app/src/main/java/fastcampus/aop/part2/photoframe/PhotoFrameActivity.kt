@@ -4,6 +4,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 import kotlin.concurrent.timer
 
 class PhotoFrameActivity: AppCompatActivity() {
@@ -20,13 +21,14 @@ class PhotoFrameActivity: AppCompatActivity() {
 
     private var currentPosition = 0
 
+    private var timer: Timer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_photoframe)
 
         getPhotoUriFromIntent()
 
-        startTimer()
     }
 
     private fun getPhotoUriFromIntent() {
@@ -39,7 +41,7 @@ class PhotoFrameActivity: AppCompatActivity() {
     }
 
     private fun startTimer() {
-        timer(period = 5*1000) {
+        timer = timer(period = 5*1000) {
             //메인 Thread가 아니기에 메인으로 바꾸기
             runOnUiThread {
                 val current = currentPosition
@@ -55,6 +57,24 @@ class PhotoFrameActivity: AppCompatActivity() {
                 currentPosition = next
             }
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        timer?.cancel()
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        startTimer()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        timer?.cancel()
     }
 
 }
