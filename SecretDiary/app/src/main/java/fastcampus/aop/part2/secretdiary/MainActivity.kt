@@ -13,6 +13,7 @@ import androidx.core.content.edit
 
 class MainActivity : AppCompatActivity() {
 
+    //NumberPicker의 최소값과 최대값을 정해줌
     private val numberPicker1 : NumberPicker by lazy{
         findViewById<NumberPicker>(R.id.numberPicker1)
             .apply {
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            //프리퍼런스라는 파일을 다른 앱과 공유하는 메소드이지만 MODE_PRIVATE를 이용하여 자신만 사용
+            //프리퍼런스는 파일을 다른 앱과 공유하는 메소드이지만 MODE_PRIVATE를 이용하여 자신만 사용
             val passwordPreferences = getSharedPreferences("password", Context.MODE_PRIVATE)
 
             val passwordFromUser = "${numberPicker1.value}${numberPicker2.value}${numberPicker3.value}"
@@ -110,6 +111,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //비밀번호가 틀렸을 경우의 대화상자를 보여주는 함수
     private fun showErrorAlertDialog(){
         AlertDialog.Builder(this).setTitle("불일치").setMessage("비밀번호가 잘못되었습니다").setPositiveButton("확인") { _, _ -> }
             .show()

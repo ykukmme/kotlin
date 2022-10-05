@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.resultTextView)
     }
 
+    //연산자가 입력되었는지를 판별하기 위해 만든 변수
     private var isOperator = false
     private var hasOperator = false
 
